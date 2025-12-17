@@ -27,7 +27,8 @@ def solve_custom_puzzle():
         print("\n" + "="*60)
         print("CUSTOM PUZZLE SOLVER")
         print("="*60)
-        print("\nEnter your puzzle row by row (9 digits each, use 0 for empty):")
+        print("\nEnter your custom puzzle row by row")
+        print("(use values 1-9 for clues, use 0 as empty, 9 digits per row):")
         print("Example: 530070000")
         print()
         
@@ -46,18 +47,28 @@ def solve_custom_puzzle():
         print("\nYour puzzle:")
         print_board(puzzle)
         
+        given_clues = 81 - count_empty_cells(puzzle)
+        
         if not is_valid_puzzle(puzzle):
-            print("⚠️ Invalid: duplicates in row, column, or box, or incomplete (17 clue minimum)")
+            print("⚠️ Invalid: duplicates in row, column, or 3x3 box")
+            response = input("\nTry reentering the puzzle? (y/n): ")
+            if response.lower() != 'y':
+                return
+            
+        elif given_clues < 17:
+            print(f"⚠️ Invalid: only {given_clues} clue(s) (17 clue minimum for valid Sudoku)")
             response = input("\nTry reentering the puzzle? (y/n): ")
             if response.lower() != 'y':
                 return
         else:
             break
     
+
     print(f"Empty cells: {count_empty_cells(puzzle)}")
     print("\nSolving...")
     
     start_time = time.time()
+
     if solve_sudoku(puzzle):
         end_time = time.time()
         print("\n✅ SOLVED!")
