@@ -1,6 +1,6 @@
 # Sudoku Solver 🔢🧩 
 
-This COMP 221 Algorithms project implements a _**Backtracking Algorithm**_ to solve Sudoku puzzles, recursively trying digits 1-9 in empty cells and backtracking when it encounters invalid placements that violate Sudoku rules.
+This COMP 221 Algorithms project implements the _**Backtracking Algorithm**_ to solve Sudoku puzzles, recursively trying digits 1-9 in empty cells and backtracking when it encounters invalid placements that violate Sudoku rules.
 
 #### Files Included:
 1. **`main.py`**: Main program with the menu interface
