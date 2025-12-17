@@ -11,11 +11,11 @@ This COMP 221 Algorithms project implements a _**Backtracking Algorithm**_ to so
 
 ### Using Sudoku Solver 🔢🧩!
 
-Run main.py which loads the interactive menu, where you can:
-- Option 1: Run All Tests which will run 5 test cases (easy, medium, hard, invalid, minimal) and show timing results.
-- Option 2: Solve puzzles from a puzzle bank (easy/medium/hard)
-- Option 3: Solve a custom, manually entered, puzzle
-- Option 4: Exit the program
+Run `main.py` which loads the interactive menu, where you can choose:
+- Option 1: Runs all tests which will run through the 5 test cases (easy, medium, hard, invalid, minimal) and show timing results
+- Option 2: Solves puzzles from a puzzle bank (easy/medium/hard)
+- Option 3: Solves a custom, manually entered, puzzle
+- Option 4: Exits the program
 
 Using Puzzle Bank:
 1. Download the 100-puzzle subset files, `easy-puzzles.txt` `medium-puzzles.txt` `hard-puzzles.txt`, included in this [Sudoku Solver repository](https://github.com/yeshedj/SudokuSolver/tree/main/puzzle_bank)
