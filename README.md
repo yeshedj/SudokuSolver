@@ -6,7 +6,8 @@ This COMP 221 Algorithms project implements a _**Backtracking Algorithm**_ to so
 1. **`main.py`**: Main program with the menu interface
 2. **`sudoku_solver.py`**: Core backtracking algorithm and helper functions
 3. **`test_puzzles.py`**: Test cases of different difficulties and situations
-4. **`puzzle_bank/`**: Folder containing puzzle files 
+4. **`puzzle_bank/`**: Folder containing puzzle files
+   - `easy-puzzle.txt` `medium-puzzle.txt` `hard-puzzle.txt`
 ---
 
 ### Using Sudoku Solver 🔢🧩!
@@ -18,8 +19,8 @@ Run `main.py` which loads the interactive menu, where you can choose:
 - Option 4: Exits the program
 
 Using Puzzle Bank:
-1. Download the 100-puzzle subset files, `easy-puzzles.txt` `medium-puzzles.txt` `hard-puzzles.txt`, included in this [Sudoku Solver repository](https://github.com/yeshedj/SudokuSolver/tree/main/puzzle_bank)
-2. Make sure they are placed in the `puzzle_bank/` directory
+1. Download the 100-puzzle subset files provided in the [`SudokuSolver/puzzle_bank/`](https://github.com/yeshedj/SudokuSolver/tree/main/puzzle_bank) repository
+2. Make sure the files are placed in the `puzzle_bank/` directory
 3. Run the program and select "Option 2: Solve puzzle from puzzle bank" from the main menu
 
 Manually Entering a Custom Puzzle:
@@ -58,6 +59,7 @@ How Sudoku Solver 🔢🧩 Uses Backtracking:
 - **Easy/Medium/Hard puzzles**: [12/16/2025](https://github.com/yeshedj/SudokuSolver/blob/main/121625-sudoku.com-puzzle.jpg) [Printable Sudoku.com Puzzles](https://sudoku.com/sudoku-printable)
 - **Minimal puzzle**: Dr. Gary McGuire (University College Dublin)'s ["Solving the Sudoku Minimum Number of Clues Problem" Paper](https://arxiv.org/pdf/1201.0749)
 - **Puzzle bank**: [Sudoku Exchange "Puzzle Bank" Repository](https://github.com/grantm/sudoku-exchange-puzzle-bank) by Grant McLean (free and unencumbered data set)
-  - For this project, 100 puzzles were selected from the `easy.txt`, `medium.txt`, and `hard.txt` difficulty level files
-  - These subset of puzzles for each level are stored in `puzzle_bank/`
+  - The original data set contains hundreds of thousands of puzzles across difficulty levels
+  - For this project, 100 puzzles were selected from the `easy.txt`, `medium.txt`, and `hard.txt` files to keep the scale manageable
+  - These selected subsets for each difficulty level are stored in `puzzle_bank/`
 
