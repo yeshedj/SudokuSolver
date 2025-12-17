@@ -57,7 +57,7 @@ How Sudoku Solver 🔢🧩 Uses Backtracking:
 #### Sources!
 - **Easy/Medium/Hard puzzles**: [12/16/2025](https://github.com/yeshedj/SudokuSolver/blob/main/121625-sudoku.com-puzzle.jpg) [Printable Sudoku.com Puzzles](https://sudoku.com/sudoku-printable)
 - **Minimal puzzle**: Dr. Gary McGuire (University College Dublin)'s ["Solving the Sudoku Minimum Number of Clues Problem" Paper](https://arxiv.org/pdf/1201.0749)
-- **Puzzle bank**: [Sudoku Exchange "Puzzle Bank" Repository](https://github.com/grantm/sudoku-exchange-puzzle-bank) by Grant McLean
+- **Puzzle bank**: [Sudoku Exchange "Puzzle Bank" Repository](https://github.com/grantm/sudoku-exchange-puzzle-bank) by Grant McLean (free and unencumbered data set)
   - For this project, 100 puzzles were selected from the `easy.txt`, `medium.txt`, and `hard.txt` difficulty level files
   - These subset of puzzles for each level are stored in `puzzle_bank/`
 
