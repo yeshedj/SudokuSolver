@@ -222,9 +222,11 @@ def show_menu():
     Displays the main menu
     """
     print("\n" + "="*60)
-    print(" " * 13 + "SUDOKU SOLVER")
-    print(" " * 8 + "Backtracking Algorithm")
+    print(" " * 20 + "SUDOKU SOLVER 🔢🧩")
+    print(" " * 15 + "Using Backtracking Algorithm")
     print("="*60)
+
+    
     print("\nOptions:")
     print("  1. Run all test cases")
     print("  2. Solve puzzle from puzzle bank")

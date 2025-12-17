@@ -210,14 +210,16 @@ def test_minimal():
 
 
 def run_all_tests():
-    """Runs all test cases and reports results"""
+    """
+    Runs all 5 test cases and reports the results
+    """
     print("\n")
-    print("*" * 70)
-    print("*" + " " * 68 + "*")
-    print("*" + " " * 20 + "SUDOKU SOLVER TEST SUITE" + " " * 24 + "*")
-    print("*" + " " * 15 + "Using Backtracking Algorithm" + " " * 26 + "*")
-    print("*" + " " * 68 + "*")
-    print("*" * 70)
+    print("*" * 67)
+    print("*" + " " * 65 + "*")
+    print("*" + " " * 22 + "SUDOKU SOLVER TESTS" + " " * 24 + "*")
+    print("*" + " " * 17 + "Using Backtracking Algorithm" + " " * 20 + "*")
+    print("*" + " " * 65 + "*")
+    print("*" * 67)
     
     tests = [
         ("Easy", test_easy),
