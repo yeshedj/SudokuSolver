@@ -2,7 +2,7 @@
 sudoku_solver.py
 COMP 221 Final Project - Sudoku Solver using Backtracking
 
-This file contains the core backtracking algorithm and helper functions for solving 9x9 Sudoku puzzles.
+This file contains the backtracking algorithm and helper functions for solving 9x9 Sudoku puzzles.
 """
 
 
@@ -37,7 +37,6 @@ def is_valid(board, row, col, num):
     - 'num' is not already in the same row
     - 'num' is not already in the same column
     - 'num' is not already in the same box
-
     """
     for j in range(9):
         if board[row][j] == num:
