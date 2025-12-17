@@ -22,7 +22,7 @@ Using Puzzle Bank:
 2. Make sure they are placed in the `puzzle_bank/` directory
 3. Run the program and select "Option 2: Solve puzzle from puzzle bank" from the main menu
 
-Manually Entering a Custom Puzzle
+Manually Entering a Custom Puzzle:
 - Enter 9 digits in all 9 rows
 - Use `0` for empty cells
 - Do not include spaces or separators
