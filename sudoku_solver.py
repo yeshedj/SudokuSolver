@@ -1,8 +1,9 @@
 """
-sudoku_solver.py
-COMP 221 Final Project - Sudoku Solver using Backtracking
+Author: Yeshe Jangchup
+Date: December 2025
 
-This file contains the backtracking algorithm and helper functions for solving 9x9 Sudoku puzzles.
+File: sudoku_solver.py 
+Description: This file contains the Sudoku-solving logic using a backtracking algorithm. It includes helper functions to support solving the 9x9 Sudoku puzzles.
 """
 
 

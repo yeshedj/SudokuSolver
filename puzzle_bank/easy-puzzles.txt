@@ -1,4 +1,4 @@
-# COMP 221 Final Project - Easy level puzzles for Sudoku Solver using Backtracking
+# Easy level puzzles for Sudoku Solver using Backtracking (COMP 221 Final Project)
 # 100 puzzles selected from 'easy.txt' file downloaded from: https://github.com/grantm/sudoku-exchange-puzzle-bank
 #-------------------------------------------------------------------------------------------------------------------
 

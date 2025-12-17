@@ -1,8 +1,9 @@
 """
-test_puzzles.py
-COMP 221 Final Project - Test Cases for Sudoku Solver using Backtracking
+Author: Yeshe Jangchup
+Date: December 2025
 
-This file contains test puzzles of different difficulties and situations.
+File: test_puzzles.py 
+Description: This file contains test cases used to make sure the Sudoku Solver is able to solve across different puzzle difficulties and edge cases.
 
 Test puzzles sourced from:
 - Easy/Medium/Hard: Sudoku examples from Sudoku.com printable puzzles (12/16/2025) [https://sudoku.com/sudoku-printable]

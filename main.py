@@ -1,9 +1,10 @@
 """
-main.py
-COMP 221 Final Project - Sudoku Solver using Backtracking
+Author: Yeshe Jangchup
+Date: December 2025
 
-Main file for the Sudoku Solver program, giving a simple menu interface for running tests/solving puzzles.
-Uses puzzles from the Sudoku Exchange Puzzle Bank (https://github.com/grantm/sudoku-exchange-puzzle-bank).
+File: main.py 
+Description: This is the main file for the Sudoku Solver program, giving a simple menu interface for running tests, solving puzzles from a puzzle bank, and solving custom puzzles. 
+Puzzle data is sourced from Grant McLean's Sudoku Exchange "Puzzle Bank" (https://github.com/grantm/sudoku-exchange-puzzle-bank)
 """
 
 from sudoku_solver import (
