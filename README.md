@@ -27,7 +27,7 @@ Manually Entering a Custom Puzzle:
 - Enter 9 digits in all 9 rows
 - Use `0` for empty cells
 - Do not include spaces or separators
-- Make sure the puzzle contains at least the theoretical minimum of 17 clues
+- Make sure the custom puzzle contains at least 17 clues
 - Make sure there are no duplicates in any row, column, or 3x3 box
 
 ---
