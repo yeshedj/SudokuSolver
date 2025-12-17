@@ -1,59 +1,29 @@
-# Sudoku Solver 
+# Sudoku Solver 🔢🧩 
 
-## COMP 221 Final Project
-This project implements a backtracking algorithm to solve Sudoku puzzles, recursively trying digits 1-9 in empty cells and backtracking when it encounters invalid placements that violate Sudoku rules.
+This COMP 221 Algorithms project implements a _**Backtracking Algorithm**_ to solve Sudoku puzzles, recursively trying digits 1-9 in empty cells and backtracking when it encounters invalid placements that violate Sudoku rules.
 
+#### Files Included:
+1. **`main.py`**: Main program with the menu interface
+2. **`sudoku_solver.py`**: Core backtracking algorithm and helper functions
+3. **`test_puzzles.py`**: Test cases of different difficulties and situations
+4. **`puzzle_bank/`**: Folder containing puzzle files 
 ---
 
-## Files Included
-
-1. **sudoku_solver.py** - Core backtracking algorithm and helper functions
-2. **test_puzzles.py** - Test cases of different difficulties and situations.
-3. **main.py** - Main program with the menu interface
-4. **puzzle_bank/** - Folder containing puzzle files from ([Sudoku Exchange "Puzzle Bank"](https://github.com/grantm/sudoku-exchange-puzzle-bank))
-
----
-
-## How to Run
+### Using Sudoku Solver 🔢🧩!
 
 Run main.py which loads the interactive menu, where you can:
-### Option 1: Run All Tests which will run 5 test cases (easy, medium, hard, invalid, minimal) and show timing results.
-### Option 2: Solve puzzles from a puzzle bank (easy/medium/hard)
-### Option 3: Solve a custom, manually entered, puzzle
-### Option 4: Exit the program
+- Option 1: Run All Tests which will run 5 test cases (easy, medium, hard, invalid, minimal) and show timing results.
+- Option 2: Solve puzzles from a puzzle bank (easy/medium/hard)
+- Option 3: Solve a custom, manually entered, puzzle
+- Option 4: Exit the program
 
----
-
-## Puzzle Sources
-
-### Test Puzzles (`test_puzzles.py`)
-
-The test puzzles were completed by hand and chosen to make sure it demonstrates algorithm correctness:
-
-1. **Easy Puzzle** - Standard easy-level puzzle from 12/16 Printable Sudoku.com Puzzles
-2. **Medium Puzzle** - Standard medium-level puzzle from 12/16 Printable Sudoku.com Puzzles
-3. **Hard Puzzle** - Standard hard-level puzzle from 12/16 Printable Sudoku.com Puzzles
-4. **Invalid Puzzle** - Custom puzzle with a duplicate number 4 (unsolvable)
-5. **Minimal Puzzle** - 17-clue puzzle from ([Gary McGuire's paper](https://arxiv.org/pdf/1201.0749))
-
-
-### Puzzle Bank (`puzzle_bank/`)
-
-This folder contains a subset of puzzles from the **Sudoku Exchange "Puzzle Bank"**:
-- Source repository: https://github.com/grantm/sudoku-exchange-puzzle-bank
-- Puzzles are initally stored in a standardized .sdm format, including the puzzle_id, puzzle_string, and difficulty_rating (e.g. 0000183b305c 050703060007000800000816000000030000005000100730040086906000204840572093000409000 1.2)
-- Each puzzle is represented by an 81-character string that is converted into a 9x9 board
-- For this project, 100 puzzles were selected from the easy, medium, and hard difficulty level files.
-
-Using puzzle bank:
-1. Download the shortened, curated puzzle file included in this Sudoku Solver repository
+Using Puzzle Bank:
+1. Download the 100-puzzle subset files, `easy-puzzles.txt` `medium-puzzles.txt` `hard-puzzles.txt`, included in this [Sudoku Solver repository](https://github.com/yeshedj/SudokuSolver/tree/main/puzzle_bank)
 2. Make sure they are placed in the `puzzle_bank/` directory
-3. Run the program and select "Soleve puzzle from puzzle bank" from the main menu
+3. Run the program and select "Option 2: Solve puzzle from puzzle bank" from the main menu
 
----
-
-## Manually Entering a Custom Puzzle
-Custom puzzles should be entered as 9 rows with 9 digits each:
+Manually Entering a Custom Puzzle
+- Enter 9 digits in all 9 rows
 - Use `0` for empty cells
 - Do not include spaces or separators
 - Make sure the puzzle contains at least the theoretical minimum of 17 clues
@@ -61,9 +31,11 @@ Custom puzzles should be entered as 9 rows with 9 digits each:
 
 ---
 
-## Algorithm Explanation
+### Algorithm Explanation 
 
-### Backtracking Steps:
+_**Backtracking Algorithm**_: a problem-solving approach that searches for solutions by incrementally building a solution, trying possible solutions, and abandoning (backtracking from) any choice that does not lead to a valid complete solution or results in a dead-end.
+
+How Sudoku Solver 🔢🧩 Uses Backtracking:
 1. Searches for an empty cell, scanning the board left-to-right, top-to-bottom
 2. Tries all the possible digits, 1-9, in that cell
 3. For every digit, checks if the placement is valid
@@ -75,16 +47,17 @@ Custom puzzles should be entered as 9 rows with 9 digits each:
 
 ---
 
-## Future Improvements
-
-Possible extensions (not required for this project):
-- Being able to upload your own txt files
-- Adding an aesthethic Graphical user interface (GUI) for you to try solving the puzzle on your own then the Backtracking algorithm checks for you
-- Step-by-step visualization showing backtracking in action
+### Future Improvements
+- Enable users to upload their own .txt puzzle files
+- Add a step-by-step visualization that shows the backtracking algorithm process in action
+- Create a user-friendly graphical user interface (GUI) where you can attempt the puzzle manually and then have the backtracking algorithm check your solution
 
 ---
 
-## References
-- **Easy/Medium/Hard puzzles**: 12/16/2025 Printable Sudoku.com Puzzles
-- **Minimal puzzle**: Gary McGuire's 17-clue puzzle (University College Dublin)
-- **Puzzle bank**: Sudoku Exchange "Puzzle Bank" by Grant McLean (https://github.com/grantm/sudoku-exchange-puzzle-bank)
+#### Sources!
+- **Easy/Medium/Hard puzzles**: [12/16/2025](https://github.com/yeshedj/SudokuSolver/blob/main/121625-sudoku.com-puzzle.jpg) [Printable Sudoku.com Puzzles](https://sudoku.com/sudoku-printable)
+- **Minimal puzzle**: [Dr. Gary McGuire's 17-clue puzzle](https://arxiv.org/pdf/1201.0749)
+- **Puzzle bank**: [Sudoku Exchange "Puzzle Bank" by Grant McLean](https://github.com/grantm/sudoku-exchange-puzzle-bank)
+  - For this project, 100 puzzles were selected from the easy, medium, and hard difficulty level files
+  - These subset of puzzles for each level are stored in `puzzle_bank/`
+
